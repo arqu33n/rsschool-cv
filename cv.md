@@ -121,6 +121,8 @@ _Oct 2021 - Jan 2022_
 - API integration: rendering product catalog, product details, recommendation feed (Fetch API)
 - State management: adding products to cart, rendering added products, displaying product name, quantity, and price (Redux)
 
+---
+
 ## Education
 
 ### Professional Retraining, Frontend Developer
@@ -134,6 +136,8 @@ _Kazan State University of Architecture and Engineering, 2014 - 2019_
 ### Additional Training
 
 - Training "Web Development with React", Hexlet, 2024
+
+---
 
 ## Languages
 
