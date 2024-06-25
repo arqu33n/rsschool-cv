@@ -120,6 +120,7 @@ _Oct 2021 - Jan 2022_
 - Page navigation (React Router)
 - API integration: rendering product catalog, product details, recommendation feed (Fetch API)
 - State management: adding products to cart, rendering added products, displaying product name, quantity, and price (Redux)
+- [ Marketplace project](https://github.com/arqu33n/shop-ReactJS-Redux)
 
 ---
 
