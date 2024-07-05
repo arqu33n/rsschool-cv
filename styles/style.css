@@ -2,11 +2,25 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 body,
-ul {
+ul,
+p,
+h2 {
   margin: 0;
   padding: 0;
+}
+.header a,
+.footer a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+.header a:hover {
+  opacity: 0.64;
+  transition: 0.32s;
 }
 .container {
   width: 1200px;
@@ -27,6 +41,7 @@ ul {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
+  font-size: 18px;
 }
 .footer__copyright {
   margin-left: auto;
@@ -34,25 +49,86 @@ ul {
 .main {
   padding: 20px 0px;
 }
-.cv-item {
+.cv-title {
   display: flex;
   align-items: center;
 }
-.cv-item__photo {
+.cv-title__photo {
   height: fit-content;
   width: 300px;
   border-radius: 50%;
 }
-.cv-item__name {
+.cv-title__name {
   font-size: 48px;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
   font-weight: 600;
 }
-.cv-item__name span {
+.cv-title__name span {
   font-size: 24px;
   font-weight: 400;
   margin-top: 16px;
   opacity: 0.48;
+}
+.cv-content {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 590px 590px;
+  grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". .";
+  width: 1200px;
+}
+.cv-content__card {
+  background-color: #edf7fa;
+  padding: 20px 20px;
+}
+.cv-content__title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.cv-content__description {
+  font-size: 20px;
+  list-style-position: inside;
+  margin-bottom: 12px;
+}
+.cv-content__description_light {
+  font-size: 16px;
+  list-style-type: none;
+}
+.cv-content__description li {
+  font-size: 16px;
+}
+.cv-content__card-item {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.cv-content__card-item span {
+  font-size: 16px;
+  font-style: italic;
+}
+.footer {
+  display: flex;
+  align-items: center;
+}
+.footer__logo {
+  height: 48px;
+}
+.footer__nav {
+  margin-left: 40px;
 }
