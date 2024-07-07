@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="./scripts/script.js"></script>
+  <title>cv-html</title>
+
+</head>
+
+<body>
+  <header class="header container">
+    <nav class="header__nav">
+      <ul>
+        <li>
+          <h1>#CV Alisa Shabanova</h1>
+        </li>
+        <li><a href="#contact-info">Contact info</a></li>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code-examples">Code Examples</a></li>
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#languages">Languages</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main container">
+    <article class="cv-title">
+      <img src="./images/photo_2024-05-04_17-12-17.jpg" alt="photo" class="cv-title__photo">
+      <h2 class="cv-title__name">Alisa Shabanova<span>Frontend Developer</span></h2>
+    </article>
+    <article class="cv-content">
+      <h2 class="seo-utility">Curriculum Vitae</h2>
+      <section class="cv-content__card" id="contact-info">
+        <h3 class="cv-content__title">Contact info:</h3>
+        <ul class="cv-content__description_light">
+          <li>Phone: +7 (952) 041-57880</li>
+          <li>Email: arqu33n@gmail.com</li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/arqu33n/">linkedin.com/in/arqu33n
+            </a></li>
+          <li>GitHub: <a href="https://github.com/arqu33n">github.com/arqu33n</a></li>
+        </ul>
+      </section>
+      <section class="cv-content__card" id="summary">
+        <h3 class="cv-content__title">Summary:</h3>
+        <span>Clean, security and UX friendly solutions believer</span>
+      </section>
+      <section class="cv-content__card" id="skills">
+        <h3 class="cv-content__title">Skills:</h3>
+        <ul class="cv-content__description">
+          <li class="cv-content__description-title">Programming Languages</li>
+          <li>JavaScript</li>
+          <li>Basic TypeScript</li>
+        </ul>
+        <ul class="cv-content__description">
+          <li class="cv-content__description-title">Frontend Frameworks and Libraries</li>
+          <li>ReactJS, Next.js</li>
+          <li>Redux</li>
+          <li>jQuery</li>
+        </ul>
+        <ul class="cv-content__description">
+          <li class="cv-content__description-title">Tools and Utilities</li>
+          <li>ESLint, Prettier</li>
+        </ul>
+        <ul class="cv-content__description">
+          <li class="cv-content__description-title">UI and Styling</li>
+          <li>UI Libraries</li>
+          <li>Responsive Design</li>
+          <li>Figma to HTML/CSS</li>
+          <li>CSS/SCSS/SaSS</li>
+        </ul>
+        <ul class="cv-content__description">
+          <li class="cv-content__description-title">Version Control</li>
+          <li>Git, GitLab, GitHub</li>
+        </ul>
+        <ul class="cv-content__description">
+          <li class="cv-content__description-title">AJAX and Other Technologies</li>
+          <li>jQuery AJAX</li>
+        </ul>
+      </section>
+      <section class="cv-content__card" id="code-examples">
+        <h3 class="cv-content__title">Code Examples:</h3>
+        <pre>
+<code>function parse(data) {
+let result = [];
+let counter = 0;
+
+  data.split("").forEach((item) => {
+    if (item == "i") {
+    counter++;
+    } else if (item == "d") {
+    counter--;
+    } else if (item == "s") {
+    counter **= 2;
+    } else if (item == "o") {
+    result.push(counter);
+    } else return;
+  });
+return result;
+}
+</code>
+<code>
+function createPhoneNumber(numbers) {
+  const numbersHost = numbers.toString().replaceAll(",", "");
+  const formattedNumber = 
+  `(${numbersHost.slice(0, 3)}) ${numbersHost.slice(
+  3,
+  6
+  )}-${numbersHost.slice(6, 10)}`;
+
+  return formattedNumber;
+}
+</code>
+       </pre>
+      </section>
+      <section class="cv-content__card" id="work-experience">
+        <h3 class="cv-content__title">Work Experience:</h3>
+        <div class="cv-content__card-item">
+          Frontend Developer, Skyeng <span>May 2022 - Present</span>
+          <ul class="cv-content__description">
+            <li>Development and maintenance of landing pages (JavaScript, jQuery, jQuery AJAX)</li>
+            <li>Integration with APIs (XMLHttpRequest, Fetch API, Google Apps Script API, Firebase API)</li>
+            <li>Layout based on Figma designs (HTML, CSS, GSAP animations)</li>
+            <li>Technical documentation management</li>
+            <li>Integration with external services (CDP - Bloomreach, CRM)</li>
+            <li>Project management in Jira, Miro</li>
+            <li>SEO tasks (UTM)</li>
+            <li>Data analysis in Google Analytics, Yandex Metrica, Yandex DataLens</li>
+            <li>CJM analysis, case studies of poor UX</li>
+            <li>A/B testing and experiments (using Exponea Bloomreach, GA, Yandex Metrica)</li>
+            <li>Working with legacy code, maintenance and refactoring</li>
+          </ul>
+        </div>
+        <div class="cv-content__card-item">
+          Web Designer, Kazmetrostroi <span>Sep 2019 - May 2022</span>
+          <ul class="cv-content__description">
+            <li>Design and development of websites on Tilda</li>
+            <li>Data analysis in Yandex Webmaster</li>
+            <li>Integration with Google Spreadsheets</li>
+            <li>UI/UX analysis</li>
+          </ul>
+        </div>
+        <div class="cv-content__card-item">
+          Frontend Web Developer (Internship), Innopolis <span>Oct 2021 - Jan 2022</span>
+          <ul class="cv-content__description">
+            <li>Development of a marketplace (ReactJS + Redux)</li>
+            <li>Layout based on Figma designs (HTML, SCSS/SASS)</li>
+            <li>Using BEM methodology</li>
+            <li>Using libraries (Material UI)</li>
+            <li>Page navigation (React Router)</li>
+            <li>API integration: rendering product catalog, product details, recommendation feed (Fetch API)</li>
+            <li>State management: adding products to cart, rendering added products, displaying product name, quantity,
+              and price
+              (Redux)</li>
+            <li><a href="https://github.com/arqu33n/shop-ReactJS-Redux">Marketplace project</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="cv-content__card" id="education">
+        <h3 class="cv-content__title">Education:</h3>
+        <div class="cv-content__card-item">Professional Retraining, Frontend Developer<span>Innopolis, 2021 -
+            2022</span></div>
+        <div class="cv-content__card-item">Bachelor of Architecture, BArch, Architectural Engineering<span>Kazan State
+            University of Architecture and
+            Engineering, 2014 - 2019</span></div>
+        <div class="cv-content__card-item">Additional Training<span>Training “Web Development with React”, Hexlet,
+            2024</span></div>
+      </section>
+      <section class="cv-content__card" id="languages">
+        <h3 class="cv-content__title">Languages:</h3>
+        <ul class="cv-content__description">
+          <li>English: B2</li>
+          <li>Russian: Native</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <footer class="footer container">
+    <a href="https://rs.school/courses/javascript-ru"><img src="https://app.rs.school/static/images/logo-rsschool3.png"
+        alt="logotype" class="footer__logo"></a>
+    <nav class="footer__nav">
+      <ul>
+        <li><a href="https://github.com/arqu33n">GitHub: arqu33n</a></li>
+      </ul>
+    </nav>
+    <div class="footer__copyright">© 2024</div>
+  </footer>
+</body>
+
+</html>
