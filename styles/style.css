@@ -110,16 +110,18 @@ a:visited {
   margin-bottom: 16px;
 }
 .cv-content__description {
-  font-size: 20px;
+  font-size: 16px;
   list-style-position: inside;
+  margin-bottom: 12px;
+}
+.cv-content__description-title {
+  font-size: 20px;
+  list-style-type: none;
   margin-bottom: 12px;
 }
 .cv-content__description_light {
   font-size: 16px;
   list-style-type: none;
-}
-.cv-content__description li {
-  font-size: 16px;
 }
 .cv-content__card-item {
   font-size: 20px;
