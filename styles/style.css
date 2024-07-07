@@ -13,6 +13,9 @@ h3 {
   margin: 0;
   padding: 0;
 }
+.seo-utility {
+  display: none;
+}
 .header a,
 .footer a {
   text-decoration: none;
